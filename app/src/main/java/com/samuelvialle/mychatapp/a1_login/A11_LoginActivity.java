@@ -134,7 +134,7 @@ public class A11_LoginActivity extends AppCompatActivity {
         FirebaseAuth firebaseAuth = FIREBASE_AUTH;
         FirebaseUser firebaseUser = CURRENT_USER;
 
-        if (firebaseUser != null) {
+        if (firebaseUser == null) {
             startActivity(new Intent(A11_LoginActivity.this, MainActivity.class));
             finish();
         }
